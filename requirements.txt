@@ -1,16 +1,32 @@
-# --- Noyau Django + DRF ---
+# ✅ Corrige l'erreur pkg_resources (setuptools doit être installé en premier)
+setuptools==70.0.0
+wheel
+pip
+
+# --- Core Django ---
 Django==5.2.7
 djangorestframework==3.15.2
 drf-yasg==1.21.7
+graphene-django==3.2.2
 django-filter==24.3
 
-# --- Déploiement sur Render ---
+# --- Authentification JWT ---
+djangorestframework-simplejwt==5.3.1
+
+# --- Interface admin et couleurs ---
+django-admin-interface==0.29.3
+django-colorfield==0.11.0
+
+# --- Déploiement Render ---
 gunicorn==22.0.0
 whitenoise==6.7.0
 dj-database-url==2.3.0
 python-dotenv==1.0.1
 psycopg2-binary==2.9.9
 
-# --- Utilitaires (si ton code les utilise encore) ---
+# --- Base locale MySQL ---
+mysql-connector-python==9.0.0
+
+# --- Utilitaires ---
 requests==2.32.3
 beautifulsoup4==4.12.3
