@@ -25,7 +25,6 @@ ALLOWED_HOSTS = ["localhost", "127.0.0.1", ".onrender.com"]
 # 🧩 Applications installées
 # =====================================================
 INSTALLED_APPS = [
-    # Django de base
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -33,16 +32,12 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 
-    # API REST
     "rest_framework",
     "drf_yasg",
-    "django_filters",
 
-    # Applications internes essentielles
-    "harvest",
+    # tes apps de données
     "catalog",
 ]
-
 # =====================================================
 # ⚙️ Middleware
 # =====================================================
